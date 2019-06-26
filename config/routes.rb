@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'comments#index'
+  root 'users#index'
   get 'comments/index'
+  resources :users
 end

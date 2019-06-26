@@ -15,6 +15,7 @@
 
       <h2> 現在 <%= current_user.name %> さんがログインしています </h2>
       <h4> メールアドレス： <%= current_user.email %> </h4>
+      <h4> 年齢： <%= current_user.age %></h4>
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete %> <!-- ログアウトをする -->
     <% else %>
   <!-- ユーザーがログインしていなかった時の処理 -->
